@@ -8,12 +8,21 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- 2) Создаём и подключаем файл style.css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
                             <!-- Section header -->
     <header class="header">
         <div class="container flex header__container">
-            <img class="header__logo" src="img/Logo.svg" alt="Logo">
+            <button class="btn-reset burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+            <div class="header__logo-div">
+                <img class="header__logo" src="img/Logo.svg" alt="Logo">
+            </div>
+            
             <nav class="nav header__nav">
                 <ul class="nav__list list-reset flex">
                     <li class="nav__item"><a href="#" class="nav__link-header">О&nbsp;нас</a></li>
@@ -23,8 +32,7 @@
                     <li class="nav__item"><a href="#" class="nav__link-header">Контакты</a></li>
                 </ul>
             </nav>
-            <img class="header__search-img" src="img/search.svg" alt="search">
-            <!-- <input class="nav__input" type="search"> -->
+            <button class="header__btn-search"></button>
         </div>       
     </header>
 
@@ -34,6 +42,7 @@
 
         <section class=" hero container">
            <div class="hero__content flex">
+            <div class="hero__block">
                 <h1 class="hero__title">
                     Проектные решения любой сложности
                 </h1>
@@ -43,6 +52,7 @@
                 <button class="btn hero__btn btn-reset">
                     Заказать расчёт
                 </button>
+            </div>   
            </div> 
         </section>
 
@@ -77,13 +87,13 @@
                 <div class="projects__content-right projects__content-block">
                      <ul class="projects__list flex list-reset">
                         <li class="projects__item projects__item-top">
-                            <h3 class="h3">Консультация с&nbsp;широким активом</h3>
+                            <h3 class="projects__h3 h3">Консультация с&nbsp;широким активом</h3>
                             <p class="projects__text-right">
                                 А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты <br> для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений
                             </p>
                         </li>
                         <li class="projects__item projects__item-bottom">
-                            <h3 class="h3">В&nbsp;своём стремлении повысить</h3>
+                            <h3 class="projects__h3 h3">В&nbsp;своём стремлении повысить</h3>
                             <p class="projects__text-right">
                                 Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества
                             </p>
@@ -107,24 +117,34 @@
                         <li class="nav__item-stages"><a href="#" class="nav__link-stages">4 шаг</a></li>
                     </ul>
                 </nav>
-                <div class="stages__background">
-                    <h3 class="stages__h3">
-                        Проводим консультацию
-                    </h3>
-                    <p class="stages__descr">
-                        Влечёт за собой процесс внедрения и модернизации приоритизации разума<br> над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.
-                        
-                    </p>
-                    <p class="stages__descr">
-                        А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
-                    </p>
-                    <button class="stages__btn-left btn btn-reset">
-                        Подробнее
-                    </button>
-                    <button class="stages__btn-right btn-reset">
-                        Договор
-                    </button>
-                </div>             
+
+                <div class="stages__descr-div flex">
+                    <div class="stages__div-left stages__div-block">
+                        <h3 class="stages__h3">
+                            Проводим консультацию
+                        </h3>
+                        <p class="stages__descr">
+                            Влечёт за собой процесс внедрения и модернизации приоритизации разума <br> над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.  
+                        </p>
+                        <p class="stages__descr stages__descr-bottom">
+                            А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу. 
+                        </p>
+                        <button class="stages__btn-left btn btn-reset">
+                            Подробнее
+                        </button>
+                        <button class="stages__btn-right btn-reset">
+                            Договор
+                        </button>
+                    </div>
+                    <div class="stages__div-img stages__div-block">
+                        <img class="stages__img" src="./img/Rectangle 18.png" alt="Rectangle">
+                    </div> 
+                </div>
+                    
+                    
+                    
+                    
+                                    
             </div>
         </section>
 

@@ -1,0 +1,308 @@
+
+/* Адаптив для 1440px - 1920px */
+
+@media (max-width: 1920px) {
+    
+}
+
+
+
+/* Адаптив для 1200px - 1440px */
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+    .header__container {
+        margin-bottom: 40px;
+    }
+
+        /* Header-----------------------------------------------*/
+
+        .h2 {
+            margin-bottom: 22px;
+        }
+    
+        .questions__h2 {
+            margin-bottom: 0;
+        }
+    
+        .header__logo-div {
+            display: flex;
+            margin: 0 auto;
+    
+        }
+    
+        .header__logo {
+            width: 100%;
+            height: 60px;
+        }
+    
+        .burger {
+            /* для позиционирования палочек в бургере absolute,
+            делаем у родителя position relative */
+            position: absolute;
+            display: block;
+            width: 32px;
+            height: 30px;
+        }
+    
+        .burger__line {
+            position: absolute;
+            left: 50%;
+            width: 30px;
+            height: 3px;
+            border-radius: inherit;
+            background-color: #000000;
+            transform: translateX(-50%);
+        }
+    
+        .burger__line:nth-child(1) {
+            top: 4px;
+        }
+    
+        .burger__line:nth-child(2) {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .burger__line:nth-child(3) {
+            bottom: 2px;
+        }
+    
+        .header__nav {
+            display: none;
+        }
+    
+        .header__btn-search {
+            right: 50px;
+        }
+
+
+}
+
+
+/* Адаптив для 1024px - 1200px */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+    .header__container {
+        margin-bottom: 40px;
+    }
+
+    /* Header-----------------------------------------------*/
+
+    .h2 {
+        margin-bottom: 22px;
+    }
+
+    .questions__h2 {
+        margin-bottom: 0;
+    }
+
+    .header__logo-div {
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .header__logo {
+        width: 100%;
+        
+        /* margin-right: 0 auto; */
+        height: 48px;
+    }
+
+    /* .burger { */
+        /* для позиционирования палочек в бургере absolute,
+        делаем у родителя position relative */
+        /* position: absolute;
+        display: block;
+        width: 32px;
+        height: 30px;
+    }
+
+    .burger__line {
+        position: absolute;
+        left: 50%;
+        width: 30px;
+        height: 3px;
+        border-radius: inherit;
+        background-color: #000000;
+        transform: translateX(-50%);
+    }
+
+    .burger__line:nth-child(1) {
+        top: 4px;
+    }
+
+    .burger__line:nth-child(2) {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .burger__line:nth-child(3) {
+        bottom: 2px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo {
+        margin: auto;
+    }
+
+    .header__btn-search {
+        right: 50px;
+    } */
+
+    /* header finished */
+
+
+    /* Hero----------------------------------------------- */
+
+    .hero__content {
+        margin-bottom: 36px;
+        height: 668px;
+        padding-top: 160px;
+        padding-right: 0;
+        padding-left: 77px;
+        background-image: none;
+        background: url(../img/balconies-1024.png);
+        background-size: cover;
+    }
+
+    .hero__title {
+        margin-bottom: 16px;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        color: #FFFFFF;
+    }
+
+    .hero__descr {
+        width: 90%;
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    /* hero finished */
+
+
+    /* About-us------------------------------------------- */
+
+    .about-us__content {
+        margin-bottom: 58px;
+    } 
+
+    .about-us__descr {
+        width: 100%;
+    }
+    /* about-us finished */
+
+
+    /* Projects */
+
+    .projects-container {
+        flex-wrap: wrap;
+        --offsets: 0;
+        --gap: 32px;
+        margin-bottom: 82px;
+    }
+
+    .projects__item {
+        padding: 65px 150px 65px 316px;
+        background-position: 77px center;
+    }
+
+    .projects__btn {
+        bottom: 67px;
+    }
+
+    .projects__content-left {
+        height: 640px;
+        background-image: url(../img/Rectangle_1024.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    /* Stages---------------------------------------------- */
+
+    .stages__content {
+        margin-bottom: 81px;
+    }
+
+    .stages__h2 {
+        margin-bottom: 49px;
+    }
+
+    .nav__list-stages {
+        margin-bottom: 50px;
+    }
+
+    .stages__div {
+        /* height: 700px;
+        background-image: url(../img/Stages_1024.png);
+        background-size: 47.2%;
+        background-repeat: no-repeat;
+        background-position: right 0 bottom 0; */
+        
+    }
+
+    .stages__descr {
+        min-height: ;
+    }
+
+
+    /* Questions */
+
+    .questions-h3 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+}
+
+
+
+/* Адаптив для 992px - 1024px */
+
+@media (max-width: 1024px) {
+
+}
+
+
+
+/* Адаптив для 768px - 992px */
+
+@media (max-width: 992px) {
+    
+}
+
+
+
+/* Адаптив для 576px - 768px */
+
+@media (max-width: 768px) {
+    
+}
+
+
+
+/* Адаптив для 320px - 576px */
+
+@media (max-width: 576px) {
+    
+}

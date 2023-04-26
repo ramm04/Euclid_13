@@ -147,7 +147,7 @@ body {
     margin-right: 279px;
 }
 
-.nav__item:not(:last-child) {
+.nav__item-header:not(:last-child) {
     margin-right: 74px;
 }
 
@@ -290,7 +290,7 @@ body {
 
 .projects-container {
         --offsets: 1;
-        gap: var(--gap);
+        column-gap: var(--gap);
         margin-bottom: 101px;
     }
 
@@ -393,10 +393,12 @@ body {
 }
 
 .projects__h3 {
+    min-width: 294px;
     margin-bottom: 9px;
 }
 
 .projects__text-right {
+    min-width: 294px;
     margin: 0;
     font-size: 16px;
     line-height: 32px;
@@ -414,7 +416,7 @@ body {
             /* Section Stages */
 
 .stages__content {
-    margin-bottom: 113px;
+    margin-bottom: 111px;
 }
 
 .stages__div {
@@ -554,7 +556,7 @@ body {
 
 
 .questions__content {
-    margin-bottom: 100px;
+    margin-bottom: 102px;
 }
 
 .questions__h2 {
@@ -633,8 +635,10 @@ body {
 }
 
 .footer__list {
-    position: absolute;
-    left: 69px;
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute;
+    left: 69px; */
 }
 
 .footer__logo {
@@ -643,11 +647,12 @@ body {
 }
 
 .footer__nav {
-    padding-top: 92px;
+    padding-top: 90px;
 }
 
 .nav__list-footer {
     flex-direction: column;
+    margin-left: -7px;
 }
 
 .nav__link-footer {
@@ -679,13 +684,22 @@ body {
     margin-right: 26px;
 }
 
-.footer__item-center {
-    flex-direction: column;
+.footer__item-left {
+    width: 467px;
+    margin-right: auto;
+    flex-shrink: 20;
 }
 
-.footer__item {
+.footer__item-center {
+    margin-right: auto;
+    flex-direction: column;
     width: 570px;
+    flex-shrink: 20;
 }
+
+/* .footer__item {
+    width: 570px;
+} */
 
 .form {
     flex-direction: column;
@@ -695,13 +709,15 @@ body {
     margin-bottom: 25px; 
 }
 
-.footer__item:not(:last-child) {
+/* .footer__item:not(:last-child) {
     margin-right: 37px;
-}
+} */
 
 .footer__item-right {
-    padding-top: 72px;
-    padding-left: 200px;
+    width: 475px;
+    margin-right: -6px;
+    padding-top: 70px;
+    padding-left: 106px;
 }
 
 .footer__item-text {
@@ -721,7 +737,7 @@ body {
 }
 
 .footer__input {
-    width: 570px;
+    min-width: 441px;
     padding-left: 23px;
     height: 60px;
     background: #414141;
@@ -734,7 +750,7 @@ body {
 }
 
 .footer__textarea {
-    width: 570px;
+    min-width: 441px;
     resize: none;
     margin-bottom: 32px;
     padding-top: 15px;

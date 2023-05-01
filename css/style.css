@@ -286,6 +286,10 @@ body {
     line-height: 32px;
 }
 
+.about-us__descr-768 {
+    display: none;
+}
+
             /* Section projects  */
 
 .projects-container {
@@ -417,6 +421,10 @@ body {
 
 .stages__content {
     margin-bottom: 111px;
+}
+
+.stages__1 {
+    background-size: cover;
 }
 
 .stages__div {

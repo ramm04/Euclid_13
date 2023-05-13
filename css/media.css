@@ -374,17 +374,34 @@
         width: 541px;
     }
 
+    .footer__btn-div {
+        margin-bottom: 51px;
+    }
+
     .footer__logo {
-        position: absolute;
-        top: 593px;
+        display: none;
+    }
+
+    .footer__logo-320 {
+        display: flex;
+        margin-right: auto;
+        margin-bottom: 10px;
+        height: 72px;
+    }
+
+    .footer__social-320 {
+        display: flex;
+        margin-right: auto;
+        margin-left: -6px;
+        /* padding-left: 6px; */
     }
 }
 
 
 
-/* Адаптив для 576px - 768px */
+/* Адаптив для 576px - 767px */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hero__content {
         padding-left: 36px;
         padding-right: 36px;

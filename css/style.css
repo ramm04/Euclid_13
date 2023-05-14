@@ -327,7 +327,11 @@ body {
     border-radius: 32px;
     background-color: #000000;
     opacity: 50%;
-   } 
+   }
+
+   .background-bottom__elem-320 {
+    display: none;
+}
 
 /* .background-bottom__elem {
     justify-content: space-between;
@@ -432,9 +436,9 @@ body {
     display: flex;
 }
 
-.stages__div-left {
+/* .stages__div-left {
     padding-right: 125px;
-}
+} */
 
 .stages__h2 {
     margin-bottom: 49px;

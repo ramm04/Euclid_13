@@ -2,7 +2,7 @@
 /* Адаптив для 1440px - 1920px */
 
 @media (max-width: 1920px) {
-    
+     
 }
 
 
@@ -393,7 +393,6 @@
         display: flex;
         margin-right: auto;
         margin-left: -6px;
-        /* padding-left: 6px; */
     }
 }
 
@@ -430,6 +429,26 @@
         margin: 0;
         
     }
+
+    .footer__item-center {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer__logo-320 {
+        display: flex;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 72px;
+    }
+
+    .footer__social-320 {
+        margin: 0;
+        justify-content: center;
+        padding-left: 6px;
+    }
+
+
     
 }
 
@@ -471,12 +490,23 @@
 
     .hero__content {
         background-image: url(../img/balconies_320.png);
-        height: 307px;
+        justify-content: center;
+        align-items: center;
+        height: 96vw;
+        width: 100%;
         margin-bottom: 61px;
-        padding-top: 60px;
+        padding-top: 1px;
         padding-left: 23px;
         padding-right: 23px;
         border-radius: 16px;
+    }
+
+    .hero__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+
     }
 
     .hero__title {
@@ -521,11 +551,13 @@
     }
 
     .projects-container {
-        gap: 28px
+        gap: 30px
     }
 
     .projects__content-left {
-        height: 403px;
+        margin-bottom: -23px;
+        height: 63vw;
+        width: 100%;
         background-image: url(../img/Rectangle2_320.png);
         background-position: top;
         background-size: contain;
@@ -560,6 +592,11 @@
 
     }
 
+    .background-bottom__elem-320 {
+        display: flex;
+        flex-direction: column;
+    }
+
     .projects__btn {
         width: 161px;
         height: 40px;
@@ -587,6 +624,15 @@
 
     .projects__item-bottom {
         background-image: url(../img/Frame\ 38.svg);
+    }
+
+    .background-bottom {
+        display: none;
+    }
+
+    .background-bottom-320 {
+        display: flex;
+        flex-direction: column;
     }
 
     .projects__h3 {
@@ -627,11 +673,13 @@
     }
 
     .stages__div-img {
-        height: 160px;
-        margin-bottom: 15px;   
+        height: 100%;
+        margin-bottom: 12px;   
     }
 
     .stages__img {
+        width: 100%;
+        height: 50vw;
         border-radius: 16px;
     }
 
@@ -685,7 +733,7 @@
     }
 
     .questions__item {
-        padding: 29px 38px 30px 0px;
+        padding: 29px 52px 30px 0px;
         background-size: 10%;
     }
 
@@ -726,16 +774,6 @@
         line-height: 15px;
     }
 
-    .footer__social-320 {
-        display: flex;
-        justify-content: center;
-        padding-left: 6px;
-
-        /* left: 33%;
-        bottom: 27px; */
-
-    }
-
     .footer__btn-div {
         margin-bottom: 32px;
     }
@@ -745,9 +783,6 @@
     }
 
     .footer__logo-320 {
-        display: flex;
-        margin-bottom: 10px;
-        /* width: 100%; */
         height: 42px;
     }
 
